@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+
+	<field name="user.firstname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please enter your firstname.</message>
+		</field-validator>
+	</field>
+
+<field name="user.lastname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please enter your lastname.</message>
+		</field-validator>
+	</field>
+
+	<field name="user.username">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please enter username.</message>
+		</field-validator>
+	</field>
+
+	<field name="user.email">
+	<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Please enter email_id.</message>
+
+		</field-validator>	
+		<field-validator type="email">
+			<message> Invalid email.</message>
+		</field-validator>
+	</field>
+
+	<field name="user.password">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>Please enter a password.</message>
+		</field-validator>
+
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">14</param>
+			<message> Password must be 6 to 14 characters long.</message>
+		</field-validator>
+	</field>
+	 
+	<!-- <field name="user.mobile">
+		<field-validator type="long">
+			<param name="min">8</param>
+			<param name="max">10</param> 
+			<message>Mobile number should be of 8 to 10 digits.</message>
+		</field-validator>
+	</field>  -->
+
+ 
+
+	<!-- <field name="Confirm_Password"> <field-validator type="required"> <message>Please 
+		enter a password..</message> </field-validator> </field> <validator type="expression"> 
+		<param name="expression">Password==confirm_Password</param> <message>Confirm 
+		passoword must be equal to password</message> </validator> -->
+
+	<!-- <field name="user.country"> <field-validator type="required"> <param 
+		name="trim">true</param> <message>Please enter a country..</message> </field-validator> 
+		</field> <field name="user.state"> <field-validator type="required"> <param 
+		name="trim">true</param> <message>Please enter a state..</message> </field-validator> 
+		</field> -->
+
+</validators>
+  
+  

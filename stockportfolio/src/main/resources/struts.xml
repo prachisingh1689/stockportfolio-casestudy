@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+
+	<package name="default" extends="struts-default" namespace="/">
+
+
+		<interceptors>
+			<interceptor name="loginIntercept" class="com.impetus.services.LoginInterceptor" />
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="loginIntercept" />
+				<interceptor-ref name="defaultStack" />
+
+			</interceptor-stack>
+
+			<interceptor name="fatalError"
+				class="com.impetus.services.FatalErrorInterceptor" />
+			<interceptor-stack name="fatalStack">
+				<interceptor-ref name="fatalError" />
+				<interceptor-ref name="defaultStack" />
+
+			</interceptor-stack>
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="debugging" />
+				<interceptor-ref name="profiling" />
+				<interceptor-ref name="scopedModelDriven" />
+				<interceptor-ref name="modelDriven" />
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="checkbox" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params">
+				</interceptor-ref>
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+				<interceptor-ref name="workflow">
+					<param name="excludeMethods">input,back,cancel,browse</param>
+				</interceptor-ref>
+
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="loginIntercept">login.jsp</result>
+			<result name="fatal">errorPage.jsp</result>
+		</global-results>
+
+
+
+
+		<action name="add" class="com.impetus.action.UserAction">
+			<interceptor-ref name="fatalStack" />
+			<result name="success">login.jsp</result>
+			<result name="error">login.jsp</result>
+			<result name="input">register.jsp</result>
+		</action>
+
+		<action name="login" class="com.impetus.action.LoginAction"
+			method="execute">
+			<interceptor-ref name="fatalStack" />
+			<result name="success" type="chain">loginSuccess</result>
+			<result name="error">error.jsp</result>
+			<result name="login">admin.jsp</result>
+
+		</action>
+		<action name="loginSuccess" class="com.impetus.action.SuccessAction">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+			<result name="success">welcome.jsp</result>
+		</action>
+
+		<action name="logout" class="com.impetus.action.LogoutAction"
+			method="execute">
+			<interceptor-ref name="fatalStack" />
+			<result name="success">login.jsp</result>
+		</action>
+
+		<action name="BROWSE_ALL" class="com.impetus.action.SearchStockAction"
+			method="Browse_allStock">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+			<result name="success">add_search_stock.jsp</result>
+		</action>
+
+
+
+		<action name="BROWSE_4_new_user" class="com.impetus.action.SearchStockAction"
+			method="Browse_allStock">
+			<!-- <interceptor-ref name="fatalStack" /> -->
+			<result name="success">newUserBrowse.jsp</result>
+		</action>
+		<action name="New_user_chart" class="com.impetus.services.charts.ShowChartAction">
+			<!-- <interceptor-ref name="fatalStack" /> -->
+			<result name="success">graph4NewUser.jsp</result>
+			<result name="error">graph4NewUser.jsp</result>
+		</action>
+		<action name="displayNew" class="com.impetus.services.charts.DisplayCharts">
+			<!-- <interceptor-ref name="fatalStack" /> -->
+			<result name="success">graph4NewUser.jsp</result>
+			<result name="error">graph4NewUser.jsp</result>
+		</action>
+		<action name="searchstock4_newuser" class="com.impetus.action.SearchStockAction">
+			<interceptor-ref name="fatalStack" />
+			<result name="success">newUserBrowse.jsp</result>
+		</action>
+
+
+
+
+
+		<action name="addstock" class="com.impetus.action.AddStockAction"
+			method="execute">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<!-- <result name="success" type="chain" >BROWSE_ALL</result> -->
+			<result name="success">add_search_stock.jsp</result>
+
+		</action>
+
+		<action name="searchstock" class="com.impetus.action.SearchStockAction">
+			<interceptor-ref name="fatalStack" />
+			<interceptor-ref name="loginStack" />
+
+			<result name="success">add_search_stock.jsp</result>
+		</action>
+
+
+		<action name="dltstock" class="com.impetus.action.AddStockAction"
+			method="delete">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<result name="success">portfolio.jsp</result>
+		</action>
+
+
+		<action name="portfolio" class="com.impetus.action.AddStockAction"
+			method="show">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<result name="success">portfolio.jsp</result>
+		</action>
+
+		<action name="alert" class="com.impetus.services.mail.AlertUserAction"
+			method="alert">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<result name="success" type="chain">portfolio</result>
+		</action>
+
+		<action name="forgot_password" class="com.impetus.action.Forgot_passwordAction">
+			<result name="success">ForgotPassword.jsp</result>
+			<result name="error">ForgotPassword.jsp</result>
+		</action>
+		<action name="Feedback" class="com.impetus.action.FeedbackAction">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<result name="success">Feedback.jsp</result>
+			<!-- <result name="error">Feedback.jsp</result> -->
+		</action>
+
+		<action name="chart" class="com.impetus.services.charts.ShowChartAction">
+			<interceptor-ref name="loginStack" />
+			<!-- <interceptor-ref name="fatalStack" /> -->
+
+			<result name="success">graph.jsp</result>
+			<result name="error">graph.jsp</result>
+		</action>
+
+		
+		<action name="display" class="com.impetus.services.charts.DisplayCharts">
+			<interceptor-ref name="loginStack" />
+			<!-- <interceptor-ref name="fatalStack" /> -->
+
+			<result name="success">graph.jsp</result>
+			<result name="error">graph.jsp</result>
+		</action>
+
+
+        <!-- <action name="newchart" class="com.impetus.services.charts.ShowChartAction">
+			<interceptor-ref name="loginStack" />
+			<interceptor-ref name="fatalStack" />
+
+			<result name="success">graph4NewUser.jsp</result>
+			<result name="error">graph4NewUser.jsp</result>
+		</action> -->
+		<!-- <action name="Start_xml_read_updation_thread" class="com.impetus.services.ReadXMLFile" 
+			method="xmlreadThread"> <result name="success">admin.jsp</result> </action> 
+			<action name="Start_email_alert_thread" class="com.impetus.services.mail.Variation_Thread_Action" 
+			method="variationThread"> <result name="success">admin.jsp</result> </action> -->
+
+
+
+
+	</package>
+</struts>

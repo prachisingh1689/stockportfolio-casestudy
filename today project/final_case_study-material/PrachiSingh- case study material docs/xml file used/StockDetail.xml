@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StockDetail>
+  <stock>
+    <stockid>1</stockid>
+    <name>INFOSYS</name>
+    <price>1200</price>
+  </stock>
+  <stock>
+    <stockid>2</stockid>
+    <name>WIPRO</name>
+    <price>1214</price>
+  </stock>
+  <stock>
+    <stockid>3</stockid>
+    <name>Jaypee</name>
+    <price>1287</price>
+  </stock>
+  <stock>
+    <stockid>4</stockid>
+    <name>Tata Consultancy Services</name>
+    <price>1227</price>
+  </stock>
+  <stock>
+    <stockid>5</stockid>
+    <name>ACC Ltd.</name>
+    <price>1233</price>
+  </stock>
+  <stock>
+    <stockid>6</stockid>
+    <name>Adani Enterprises Lt.</name>
+    <price>1296</price>
+  </stock>
+  <stock>
+    <stockid>7</stockid>
+    <name>Ambuja Cements Ltd.</name>
+    <price>1284</price>
+  </stock>
+  <stock>
+    <stockid>8</stockid>
+    <name>Andhra Bank</name>
+    <price>1212</price>
+  </stock>
+  <stock>
+    <stockid>9</stockid>
+    <name>Ashok Leyland Ltd.</name>
+    <price>1219</price>
+  </stock>
+  <stock>
+    <stockid>10</stockid>
+    <name>Asian Paints Ltd.</name>
+    <price>1223</price>
+  </stock>
+  <stock>
+    <stockid>11</stockid>
+    <name>Axis Bank Ltd.</name>
+    <price>1252</price>
+  </stock>
+  <stock>
+    <stockid>12</stockid>
+    <name>Bajaj Auto Ltd.</name>
+    <price>1270</price>
+  </stock>
+  <stock>
+    <stockid>13</stockid>
+    <name>Bank of Baroda</name>
+    <price>1245</price>
+  </stock>
+  <stock>
+    <stockid>14</stockid>
+    <name>Bank of India</name>
+    <price>1292</price>
+  </stock>
+  <stock>
+    <stockid>15</stockid>
+    <name>Bharat Electronics L...</name>
+    <price>1229</price>
+  </stock>
+  <stock>
+    <stockid>16</stockid>
+    <name>Bharat Forge Ltd.</name>
+    <price>1207</price>
+  </stock>
+  <stock>
+    <stockid>17</stockid>
+    <name>Bharat Heavy Electri...</name>
+    <price>1291</price>
+  </stock>
+  <stock>
+    <stockid>18</stockid>
+    <name>Bharat Petroleum Cor...</name>
+    <price>1269</price>
+  </stock>
+  <stock>
+    <stockid>19</stockid>
+    <name>Bharti Airtel Ltd.</name>
+    <price>1231</price>
+  </stock>
+  <stock>
+    <stockid>20</stockid>
+    <name>Biocon Ltd.</name>
+    <price>1245</price>
+  </stock>
+  <stock>
+    <stockid>21</stockid>
+    <name>Bosch Ltd.</name>
+    <price>1270</price>
+  </stock>
+  <stock>
+    <stockid>22</stockid>
+    <name>Cairn India Ltd.</name>
+    <price>1253</price>
+  </stock>
+  <stock>
+    <stockid>23</stockid>
+    <name>Canara Bank</name>
+    <price>1255</price>
+  </stock>
+  <stock>
+    <stockid>24</stockid>
+    <name>Cipla Ltd.</name>
+    <price>1236</price>
+  </stock>
+  <stock>
+    <stockid>25</stockid>
+    <name>Coal India Ltd</name>
+    <price>1293</price>
+  </stock>
+  <stock>
+    <stockid>26</stockid>
+    <name>Colgate Palmolive (I...</name>
+    <price>1206</price>
+  </stock>
+  <stock>
+    <stockid>27</stockid>
+    <name>Container Corporatio...</name>
+    <price>1219</price>
+  </stock>
+  <stock>
+    <stockid>28</stockid>
+    <name>Crompton Greaves Ltd...</name>
+    <price>1291</price>
+  </stock>
+  <stock>
+    <stockid>29</stockid>
+    <name>Cummins India Ltd.</name>
+    <price>1294</price>
+  </stock>
+  <stock>
+    <stockid>30</stockid>
+    <name>Dabur India Ltd.</name>
+    <price>1294</price>
+  </stock>
+  <stock>
+    <stockid>31</stockid>
+    <name>Divis Laboratories</name>
+    <price>1235</price>
+  </stock>
+  <stock>
+    <stockid>32</stockid>
+    <name>DLF Ltd.</name>
+    <price>1270</price>
+  </stock>
+  <stock>
+    <stockid>33</stockid>
+    <name>Dr. Reddys Laborato...</name>
+    <price>1277</price>
+  </stock>
+  <stock>
+    <stockid>34</stockid>
+    <name>Exide Industries Ltd...</name>
+    <price>1259</price>
+  </stock>
+  <stock>
+    <stockid>35</stockid>
+    <name>Federal Bank Ltd.</name>
+    <price>1221</price>
+  </stock>
+  <stock>
+    <stockid>36</stockid>
+    <name>GAIL (India) Ltd.</name>
+    <price>1218</price>
+  </stock>
+  <stock>
+    <stockid>37</stockid>
+    <name>GlaxoSmithkline Cons...</name>
+    <price>1294</price>
+  </stock>
+  <stock>
+    <stockid>38</stockid>
+    <name>Glaxosmithkline Phar...</name>
+    <price>1226</price>
+  </stock>
+  <stock>
+    <stockid>39</stockid>
+    <name>Glenmark Pharmaceuti...</name>
+    <price>1256</price>
+  </stock>
+  <stock>
+    <stockid>41</stockid>
+    <name>GMR Infrastructure L...</name>
+    <price>1237</price>
+  </stock>
+  <stock>
+    <stockid>42</stockid>
+    <name>Grasim Industries Lt...</name>
+    <price>1294</price>
+  </stock>
+  <stock>
+    <stockid>43</stockid>
+    <name>HCL Technologies Ltd...</name>
+    <price>1249</price>
+  </stock>
+  <stock>
+    <stockid>44</stockid>
+    <name>HDFC Bank Ltd.</name>
+    <price>1209</price>
+  </stock>
+  <stock>
+    <stockid>45</stockid>
+    <name>Hero Honda Motors Lt...</name>
+    <price>1216</price>
+  </stock>
+  <stock>
+    <stockid>46</stockid>
+    <name>Hindalco Industries ...</name>
+    <price>1203</price>
+  </stock>
+  <stock>
+    <stockid>47</stockid>
+    <name>Hindustan Petroleum ...</name>
+    <price>1225</price>
+  </stock>
+  <stock>
+    <stockid>48</stockid>
+    <name>Hindustan Unilever L...</name>
+    <price>1237</price>
+  </stock>
+  <stock>
+    <stockid>49</stockid>
+    <name>Housing Development ...</name>
+    <price>1213</price>
+  </stock>
+  <stock>
+    <stockid>50</stockid>
+    <name>I T C Ltd.</name>
+    <price>1249</price>
+  </stock>
+  <stock>
+    <stockid>51</stockid>
+    <name>ICICI Bank Ltd.</name>
+    <price>1207</price>
+  </stock>
+  <stock>
+    <stockid>52</stockid>
+    <name>Idea Cellular Ltd.</name>
+    <price>1269</price>
+  </stock>
+  <stock>
+    <stockid>53</stockid>
+    <name>Indian Hotels Co. Lt...</name>
+    <price>1252</price>
+  </stock>
+  <stock>
+    <stockid>54</stockid>
+    <name>IndusInd Bank Ltd.</name>
+    <price>1265</price>
+  </stock>
+  <stock>
+    <stockid>55</stockid>
+    <name>Industrial Developme...</name>
+    <price>1268</price>
+  </stock>
+  <stock>
+    <stockid>56</stockid>
+    <name>Indica tec pvt ltd...</name>
+    <price>1252</price>
+  </stock>
+  <stock>
+    <stockid>57</stockid>
+    <name>Infrastructure Devel...</name>
+    <price>1207</price>
+  </stock>
+  <stock>
+    <stockid>58</stockid>
+    <name>Jaiprakash Associate...</name>
+    <price>1285</price>
+  </stock>
+  <stock>
+    <stockid>59</stockid>
+    <name>Jindal Steel and Power...</name>
+    <price>1269</price>
+  </stock>
+  <stock>
+    <stockid>60</stockid>
+    <name>JSW Steel Ltd.</name>
+    <price>1296</price>
+  </stock>
+  <stock>
+    <stockid>61</stockid>
+    <name>Kotak Mahindra Bank ...</name>
+    <price>1245</price>
+  </stock>
+  <stock>
+    <stockid>62</stockid>
+    <name>Larsen and Toubro Ltd.</name>
+    <price>1253</price>
+  </stock>
+  <stock>
+    <stockid>63</stockid>
+    <name>LIC Housing Finance ...</name>
+    <price>1265</price>
+  </stock>
+  <stock>
+    <stockid>64</stockid>
+    <name>Lupin Ltd.</name>
+    <price>1272</price>
+  </stock>
+  <stock>
+    <stockid>65</stockid>
+    <name>Mahindra and Mahindra ...</name>
+    <price>1294</price>
+  </stock>
+  <stock>
+    <stockid>66</stockid>
+    <name>Maruti Suzuki India ...</name>
+    <price>1246</price>
+  </stock>
+  <stock>
+    <stockid>67</stockid>
+    <name>MphasiS Ltd.</name>
+    <price>1212</price>
+  </stock>
+  <stock>
+    <stockid>68</stockid>
+    <name>NTPC Ltd.</name>
+    <price>1231</price>
+  </stock>
+  <stock>
+    <stockid>69</stockid>
+    <name>Oil and Natural Gas Co...</name>
+    <price>1245</price>
+  </stock>
+  <stock>
+    <stockid>70</stockid>
+    <name>Oracle Financial Ser...</name>
+    <price>1225</price>
+  </stock>
+  <stock>
+    <stockid>71</stockid>
+    <name>Petronet LNG Ltd.</name>
+    <price>1263</price>
+  </stock>
+  <stock>
+    <stockid>72</stockid>
+    <name>Power Finance Corpor...</name>
+    <price>1289</price>
+  </stock>
+  <stock>
+    <stockid>73</stockid>
+    <name>Power Grid Corporati...</name>
+    <price>1228</price>
+  </stock>
+  <stock>
+    <stockid>74</stockid>
+    <name>Punjab National Bank</name>
+    <price>1231</price>
+  </stock>
+  <stock>
+    <stockid>75</stockid>
+    <name>Ranbaxy Laboratories...</name>
+    <price>1244</price>
+  </stock>
+  <stock>
+    <stockid>76</stockid>
+    <name>Reliance Capital Ltd...</name>
+    <price>1251</price>
+  </stock>
+  <stock>
+    <stockid>77</stockid>
+    <name>Reliance Communicati...</name>
+    <price>1220</price>
+  </stock>
+  <stock>
+    <stockid>78</stockid>
+    <name>Reliance Industries ...</name>
+    <price>1236</price>
+  </stock>
+  <stock>
+    <stockid>79</stockid>
+    <name>Reliance Infrastruct...</name>
+    <price>1242</price>
+  </stock>
+  <stock>
+    <stockid>80</stockid>
+    <name>Reliance Power Ltd.</name>
+    <price>1270</price>
+  </stock>
+  <stock>
+    <stockid>81</stockid>
+    <name>Rural Electrificatio...</name>
+    <price>1218</price>
+  </stock>
+  <stock>
+    <stockid>82</stockid>
+    <name>Sesa Goa Ltd.</name>
+    <price>1254</price>
+  </stock>
+  <stock>
+    <stockid>83</stockid>
+    <name>Shriram Transport Fi...</name>
+    <price>1228</price>
+  </stock>
+  <stock>
+    <stockid>84</stockid>
+    <name>Siemens Ltd.</name>
+    <price>1217</price>
+  </stock>
+  <stock>
+    <stockid>85</stockid>
+    <name>State Bank of India</name>
+    <price>1206</price>
+  </stock>
+  <stock>
+    <stockid>86</stockid>
+    <name>Steel Authority of I...</name>
+    <price>1297</price>
+  </stock>
+  <stock>
+    <stockid>87</stockid>
+    <name>Sterlite Industries ...</name>
+    <price>1238</price>
+  </stock>
+  <stock>
+    <stockid>88</stockid>
+    <name>Sun Pharmaceutical I...</name>
+    <price>1250</price>
+  </stock>
+  <stock>
+    <stockid>89</stockid>
+    <name>Tata Chemicals Ltd.</name>
+    <price>1218</price>
+  </stock>
+  <stock>
+    <stockid>90</stockid>
+    <name>Tata Software Ser...</name>
+    <price>1236</price>
+  </stock>
+  <stock>
+    <stockid>91</stockid>
+    <name>Tata Motors Ltd.</name>
+    <price>1208</price>
+  </stock>
+  <stock>
+    <stockid>92</stockid>
+    <name>Tata Power Co. Ltd.</name>
+    <price>1258</price>
+  </stock>
+  <stock>
+    <stockid>93</stockid>
+    <name>Tata Steel Ltd.</name>
+    <price>1291</price>
+  </stock>
+  <stock>
+    <stockid>94</stockid>
+    <name>Tech Mahindra Ltd.</name>
+    <price>1233</price>
+  </stock>
+  <stock>
+    <stockid>95</stockid>
+    <name>Titan Industries Ltd...</name>
+    <price>1263</price>
+  </stock>
+  <stock>
+    <stockid>96</stockid>
+    <name>Torrent Power Ltd.</name>
+    <price>1252</price>
+  </stock>
+  <stock>
+    <stockid>97</stockid>
+    <name>UltraTech Cement Ltd...</name>
+    <price>1262</price>
+  </stock>
+  <stock>
+    <stockid>98</stockid>
+    <name>Union Bank of India</name>
+    <price>1230</price>
+  </stock>
+  <stock>
+    <stockid>99</stockid>
+    <name>United Phosphorus Lt...</name>
+    <price>1252</price>
+  </stock>
+  <stock>
+    <stockid>100</stockid>
+    <name>United Spirits Ltd.</name>
+    <price>1256</price>
+  </stock>
+  <stock>
+    <stockid>101</stockid>
+    <name>Wipro BPO Ltd.</name>
+    <price>1270</price>
+  </stock>
+  <stock>
+    <stockid>102</stockid>
+    <name>Yes Bank Ltd.</name>
+    <price>1291</price>
+  </stock>
+  <stock>
+    <stockid>103</stockid>
+    <name>Zee Entertainment En...</name>
+    <price>1216</price>
+  </stock>
+</StockDetail>
